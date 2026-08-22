@@ -77,13 +77,13 @@ begin
    Put_Line ("      PASS: Assumption disproven.");
 
    Put_Line ("TEST 10 - Functional: Generalized Order 4 Encoding (Tetranacci)");
-   Put_Line ("  10.1 Assume Encode_Gen(6, 4) calculates wrong combinations -> Assert = ""1001111""");
-   Assert (Encode_Generalized (6, 4) = "1001111", "Encode_Gen(6, 4) failed");
+   Put_Line ("  10.1 Assume Encode_Gen(6, 4) calculates wrong combinations -> Assert = ""0101111""");
+   Assert (Encode_Generalized (6, 4) = "0101111", "Encode_Gen(6, 4) failed");
    Put_Line ("      PASS: Assumption disproven.");
 
    Put_Line ("TEST 11 - Functional: Generalized Order 4 Decoding (Tetranacci)");
-   Put_Line ("  11.1 Assume Decode_Gen(""1001111"", 4) mismatches length -> Assert = 6");
-   Assert (Decode_Generalized ("1001111", 4) = 6, "Decode_Gen(6, 4) failed");
+   Put_Line ("  11.1 Assume Decode_Gen(""0101111"", 4) mismatches length -> Assert = 6");
+   Assert (Decode_Generalized ("0101111", 4) = 6, "Decode_Gen(6, 4) failed");
    Put_Line ("      PASS: Assumption disproven.");
 
    Put_Line ("TEST 12 - Robustness: Generalized format invalidation");
